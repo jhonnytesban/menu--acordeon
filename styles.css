@@ -13,14 +13,15 @@ body{
   margin: 120px 20px;
   padding: 0 20px 20px 20px;
   border-radius: 20px;
-  /* position: relative; */
+  position: relative;
 }
 .shade{
   display: block;
   margin: auto;
 }
 .logo{
-  position: relative;
+  position: absolute;
+  top: -100px;
 }
 .subtitle{
   font-family: var(--font-sans);
@@ -32,12 +33,20 @@ body{
   padding-left: 0;
 }
 .menu__item{
-  height: 17px;
+  height: 30px;
   overflow: hidden;
   font-family: var(--font-sans);
   font-weight: 400;
   color: rgb(122, 122, 122);
   margin-bottom: 10px;
+}
+.list__title{
+  font-size: .8em;
+}
+.list__title::after{
+  content: url(./assets/images/icon-arrow-down.svg);
+  position: absolute;
+  right: 30px;
 }
 .text{
   font-family: var(--font-sans);
