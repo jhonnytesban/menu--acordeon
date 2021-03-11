@@ -4,6 +4,9 @@
   /* Colors */
   --soft-violet: hsl(273, 75%, 66%);
   --grayish-blueL: hsl(240, 5%, 91%);
+
+  /* Icon */
+  --icon-rotate0: 0deg;
 }
 body{
   background-color: var(--soft-violet);
@@ -39,18 +42,31 @@ body{
   font-weight: 400;
   color: rgb(122, 122, 122);
   margin-bottom: 10px;
+  transition: all .5s ease-in-out;
+}
+.menu__item-activate{
+  height: 95px;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  color: rgb(44, 44, 44);
+  margin-bottom: 10px;
+  transition: all .5s ease-in;
 }
 .list__title{
   font-size: .8em;
 }
 .list__title::after{
-  content: url(./assets/images/icon-arrow-down.svg);
+  content: url(../assets/images/icon-arrow-down.svg);
   position: absolute;
   right: 30px;
+  transform: rotate(var(--icon-rotate));
+  transition: all .5s;
 }
 .text{
   font-family: var(--font-sans);
   font-weight: 400;
   color: rgb(122, 122, 122);
   font-size: .8em;
+  line-height: 1.5em;
 }
