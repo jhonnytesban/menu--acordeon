@@ -6,15 +6,15 @@ let bool2 = true
 let bool3 = true
 let bool4 = true
 
-const rotate = (number) => {
-  if(bool) {
-    icon[number].style.setProperty('--icon-rotate', '180deg')
-    bool = false
-  } else {
-    icon[number].style.setProperty('--icon-rotate', '0deg')
-    bool = true
-  }
-}
+// const rotate = (number, b) => {
+//   if(b) {
+//     icon[number].style.setProperty('--icon-rotate', '180deg')
+//     b = !b
+//   } else {
+//     icon[number].style.setProperty('--icon-rotate', '0deg')
+//     b = !b
+//   }
+// }
 
 const changeClass = (number) => {
   listItem[number].classList.toggle("menu__item")
@@ -23,13 +23,13 @@ const changeClass = (number) => {
 
 listItem[0].addEventListener('click', () => {
   changeClass(0)
-  // rotate(0)
+  // rotate(0, bool0)
   if (bool0) {
     icon[0].style.setProperty('--icon-rotate', '180deg')
-    bool0 = false
+    bool0 = !bool0
   } else {
     icon[0].style.setProperty('--icon-rotate', '0deg')
-    bool0 = true
+    bool0 = !bool0
   }
 })
 listItem[1].addEventListener('click', () => {
